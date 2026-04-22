@@ -10,6 +10,7 @@
 - **Transactions :**
     - Effectuer un dépôt sur un compte.
     - Effectuer un retrait d'un compte (avec vérification du solde suffisant).
+    - Effectuer un virement entre deux comptes (interne ou externe).
     - Historique des transactions pour chaque compte.
 
 ### Spécifications Non-Fonctionnelles
@@ -54,6 +55,7 @@
 - `GET /api/accounts/{id}` : Détails d'un compte spécifique.
 - `POST /api/accounts/{id}/deposit` : Effectuer un dépôt.
 - `POST /api/accounts/{id}/withdraw` : Effectuer un retrait.
+- `POST /api/accounts/{id}/transfer` : Effectuer un virement vers un autre compte.
 
 ## 4. Étapes d'Implémentation
 
